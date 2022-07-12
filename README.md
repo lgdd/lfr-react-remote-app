@@ -1,4 +1,4 @@
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lgdd/lfr-react-remote-app)
+![React version](https://img.shields.io/github/package-json/dependency-version/lgdd/lfr-react-remote-app/react)
 
 # Liferay React Remote App
 
@@ -16,6 +16,12 @@ This template is using a custom webpack configuration to build your application 
 
 You can find multiple scripts in [package.json](package.json#14) not using `react-scripts`:
 
-- `start`: watch files under `src/` and run `serve` if there is any change (allows you to keep the single file approach on localhost).
-- `serve`: run the `build` script and `serve` the result on port `3000`.
-- `build`: transpile your application to a `build` folder using webpack and its [configuration](webpack.config.js).
+- `start`: watch files under `src/` and run `serve` if there is any change which allows you to keep the single file approach on localhost.
+- `serve`: run the `build` script and serve static files under the `build` folder on port `3000`.
+- `build`: transpile your application into a `build` folder using webpack and its [configuration](webpack.config.js).
+
+## Deploy to Netlify
+
+> Documentation: https://docs.netlify.com/site-deploys/create-deploys/
+
+Why __Netlify__? Because __it's awesome!__ Once your repository is linked, you have an automatic deployment each time you push changes to your repository. And by default, Netlify uses `cache-control: public, max-age=0, must-revalidate` to serve your application which means that you are able to see each changes live. Very useful for tests and demos, and if needed you can have [custom HTTP Headers](https://docs.netlify.com/routing/headers/) using a config file. Cherry on the cake, they provide a very fair free tier based on bandwith and build frequency (cf. [Pricing](https://www.netlify.com/pricing/)).
