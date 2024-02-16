@@ -1,0 +1,13 @@
+assemble:
+    - from: build
+      into: static
+lfr-react-remote-app:
+    friendlyURLMapping: lfr-react-remote-app
+    htmlElementName: lfr-react-remote-app
+    instanceable: false
+    name: Liferay React Remote App
+    portletCategoryName: category.client-extensions
+    type: customElement
+    urls:
+        - bundle.js
+    useESM: true
