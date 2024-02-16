@@ -1,6 +1,6 @@
 ![React version](https://img.shields.io/github/package-json/dependency-version/lgdd/lfr-react-remote-app/react)
 
-# Liferay React Remote App
+# Liferay React Remote App (Client Extension)
 
 This is a template intended for tests & demos. The webpack configuration included is not optimized for production environments.
 
